@@ -1,1 +1,35 @@
+Kommentar:
+
+//    //Einzeilig
+/*
+*/    //Mehrzeilig
+
+Operatoren:
++     //Summe aus a und b
+%     //Restwert von b/a
+++variable  //Präinkrement
+variable++  //Postinkrement
+--variable  //Prädekrement
+variable--  //Postdekrement
+==    //Gleich, a==b ergibt true, wenn a und b gleich sind, bei Referenztypen wird true angezeigt, wenn beide Werte auf das selbe Objekt zeigen
+!=    //Ungleich, ergibt true, wenn a und b ungleich sind
+<     //kleiner, ergibt true, wenn a kleiner als b ist
+<=    //kleiner gleich""
+>     //größer
+>=    //größer gleich
+
+Logische Operatoren:
+!     //Logisches NICHT, !a ergibt true, wenn a false ist
+&&    //Logisches UND, ergibt true, wenn alle Bedingungen true sind
+||    //Logisches ODER, ergibt true, wenn eine der Bedingungen true ist (eine reicht aus)
+^     //Exclusiv ODER, gibt true aus, wenn beide Ausdrücke einen unterschiedlichen Wert haben
+
+Zuweisungsoperator:
+=     //Einfache Zuweisung, a = b weist a den Wert von b zu
++=    //Additionszuweisung, a += b addiert a und b und weist a den wert von a+b zu
+-=    //Subtraktionszuweisung
+*=    //Multiplikationszuweisung
+/=    //Divisionszuweisung
+
+
 
