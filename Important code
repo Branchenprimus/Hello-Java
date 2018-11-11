@@ -4,6 +4,7 @@ Kommentar:
 /*
 */    //Mehrzeilig
 
+
 Operatoren:
 +     //Summe aus a und b
 %     //Restwert von b/a
@@ -18,11 +19,13 @@ variable--  //Postdekrement
 >     //größer
 >=    //größer gleich
 
+
 Logische Operatoren:
 !     //Logisches NICHT, !a ergibt true, wenn a false ist
 &&    //Logisches UND, ergibt true, wenn alle Bedingungen true sind
 ||    //Logisches ODER, ergibt true, wenn eine der Bedingungen true ist (eine reicht aus)
 ^     //Exclusiv ODER, gibt true aus, wenn beide Ausdrücke einen unterschiedlichen Wert haben
+
 
 Zuweisungsoperator:
 =     //Einfache Zuweisung, a = b weist a den Wert von b zu
@@ -32,4 +35,51 @@ Zuweisungsoperator:
 /=    //Divisionszuweisung
 
 
+Datentypen:         //Sortiert nach größe
+boolean boo = true;     //true oder false, 1 Byte
+char character = 'a';   //16 Bit Unicode, 2 Byte
+byte b = 1;             //-128 bis 127, 1 BYte
+short sho = 2;          //-32768 bis 32767, 2 Byte
+int integer = 1;        //-2^31 bis 2^31-1, 4 Byte
+long longinteger = 10;  //-2^64 bis 2^64-1, 8 Byte
+float floating = 1.5f;  //1,40239...E-45f bis 3,402823...E+38f, 4 Byte
+double doub = 4.5;      //4,940656...E-324 bis 1,79769...E+308, 8 Byte
 
+
+Konstanten:
+final double PI = 3.14159265; //kann nicht verändert werden
+
+
+Typverkleinerung/vergrößerung:
+double d = 1.5;
+byte b = (byte) d;    //Typverkleinerung muss durch in Klammernsetzen des Gew. Datentyps explizit angegeben werden
+byte b1 = 1;
+double d1 = b1;       //Typvergrößerungen können ohne Probleme gemacht werden
+
+
+Steuerzeichen in der Ausgabe:
+System.Out.Println("" + a + "\n" + "\t");   
+
+
+if-Anweisung:
+if (z <= x){      //Es wird nach einem bool'schen Ausdruck gefragt
+...
+}
+else{
+...
+}
+
+
+switch-case-Anweisung:  //kann byte, short, char, int und Strings annehmen
+int i = 1;
+
+switch (i){
+case 1:...; break; //Alle Anweisungen bis zum nächsten break werden ausgeführt
+case 2:...; break;
+default:...;
+}
+
+Schleifen:
+for(int i =0;i<=10;i++){    //Schleifenanweisung wird ausgeführt, wenn chleifenbedingung true ist
+                            //Es gilt for(init-Ausdruck;test-Ausdruck;Update){}
+}
