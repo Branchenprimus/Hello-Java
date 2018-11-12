@@ -45,6 +45,16 @@ long longinteger = 10;  //-2^64 bis 2^64-1, 8 Byte
 float floating = 1.5f;  //1,40239...E-45f bis 3,402823...E+38f, 4 Byte
 double doub = 4.5;      //4,940656...E-324 bis 1,79769...E+308, 8 Byte
 
+Array:
+int [] a = new int[4];    //ein Array braucht min. einen Wert, der die länge bestimmt
+int [][][] b = {{{1,2,3},{4,5,6}},{{7,8,9},{10,11,12}}};  //Mehrdimensional
+
+
+Erweiterte for-Schleife:    //Um über jedes Element im Array zu Itterieren
+int [] a = {1,2,3};
+for (int i : a);
+System.Out.Println(i);    //gibt die in i gespeicherten Elemente aus
+
 
 Konstanten:
 final double PI = 3.14159265; //kann nicht verändert werden
@@ -79,7 +89,43 @@ case 2:...; break;
 default:...;
 }
 
+
 Schleifen:
 for(int i =0;i<=10;i++){    //Schleifenanweisung wird ausgeführt, wenn chleifenbedingung true ist
                             //Es gilt for(init-Ausdruck;test-Ausdruck;Update){}
 }
+
+
+Scanner:
+import java.util.Scanner;
+Scanner scan = new Scanner(System.in);
+int eingabe = scan.nextInt();           //es Kann jeder Datentyp eingelesen werden
+
+
+JOptionPane:
+import javax.swing.JOptionPane;
+String eingabe = JOptionPane.showInputDialog(null,"Bitte eingabe","Hallo",JOptionPane.PLAIN_MESSAGE);
+
+Zufallszahl:
+import java.util.Random;
+Random zahlengenerator = new Random();
+int zufallszahl = zahlengenerator.nextInt(99)+1;    //um eine Zahl zwischen 1 und 99 zu erzeugen
+
+
+Mathematik:
+double d = Math.sqrt(x);    //gibt Wurzel aus x zurück
+double d = Math.pow(x,y);   //berechnet x^y
+long d = Math.max(x,y);     //liefert den größten Wert
+long d = Math.min(x,y);     //liefert den kleinsten Wert
+int i = Math.round(x);       //rundet x zur nächsten Ganzzahl
+
+
+Methoden:
+public static void methode1 (){}                                 // Methoden verlangt weder Eingabe- noch Rückgabewert
+public static double methode2 (float floating, int integer){    // Methode hat zwei unterschiedliche eingabewerte und benötigt einen return-wert
+return 1.5;}
+
+public static void HalloWelt (float f, int i){}                 // Methoden sind überladen (name gleich, eingabewerte unterschiedlich
+public static void Hallowelt (int i, float f){}
+
+
