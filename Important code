@@ -129,3 +129,9 @@ public static void HalloWelt (float f, int i){}                 // Methoden sind
 public static void Hallowelt (int i, float f){}
 
 
+Equals:
+valid = a.equals(b);    //Vergleicht zwei Strings und gibt true zurück, wenn identisch
+
+lo lower/uppercase
+a = a.toLowerCase();    //konvertiert den String a zu klein/großbuchstaben
+a = a.toUpperCase();
