@@ -1,0 +1,36 @@
+public double rundeAufZweiNachkommastellen(double zahl) {		//rundet man den üblichen weg über die 
+																	                          //Konvertierung, so wird die relevante stelle ignoriert
+																	                          //Hier nicht!
+		switch (ermittlungRundungsstelle(zahl)) {
+
+		case 5: zahl = zahl + 0.005; break;
+		case 6: zahl = zahl + 0.004; break;
+		case 7: zahl = zahl + 0.003; break;
+		case 8: zahl = zahl + 0.002; break;
+		case 9: zahl = zahl + 0.001; break;
+		}
+		zahl = zahl * 100;
+		zahl = (int) zahl;
+		zahl = zahl / 100;
+
+		return zahl;
+
+	}
+
+	public int ermittlungRundungsstelle(double zahl) {		//Die dritte Nachkommastelle wird ermittelt
+
+		double zahlWandlerHun;
+		int zahlWandlerHunInt;
+		double zahlWandlerTau;
+		int zahlWandlerTauInt;
+
+		zahlWandlerTau = zahl * 1000;
+		zahlWandlerTauInt = (int) zahlWandlerTau;
+		zahlWandlerHun = zahl * 100;
+		zahlWandlerHunInt = (int) zahlWandlerHun * 10;
+
+		return zahlWandlerTauInt - zahlWandlerHunInt;
+
+	}
+
+}
