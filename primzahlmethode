@@ -1,0 +1,28 @@
+public class primzahl {
+	public static void main(String[] args) {
+		primzahlmethode(1, 5000);
+	}
+
+	public static void primzahlmethode(int min, int max) { // durch 1 und durch sich selber Teilbar
+int zähler = 0;
+		for(;min<max;min++) {
+			if(durchAlleZahlenZwischenEinsUndSichSelberTeilen(min)==true) {
+				zähler++;
+				System.out.println("Test Nr " + zähler + ": " + min + " ist Primzahl");
+			}}}
+
+			
+	public static boolean durchAlleZahlenZwischenEinsUndSichSelberTeilen(int minx) {		
+			
+		int zähler = 2;
+		while(minx%zähler!=0) {
+			zähler++;
+		
+			if(zähler==minx-1 || minx==3) {
+				return true;
+			}
+		}
+		return false;
+			
+		}
+}
