@@ -1,6 +1,6 @@
 public double rundeAufZweiNachkommastellen(double zahl) {		//rundet man den üblichen weg über die 
-																	                          //Konvertierung, so wird die relevante stelle ignoriert
-																	                          //Hier nicht!
+									//Konvertierung, so wird die relevante stelle ignoriert
+									//Hier nicht!
 		switch (ermittlungRundungsstelle(zahl)) {
 
 		case 5: zahl = zahl + 0.005; break;
